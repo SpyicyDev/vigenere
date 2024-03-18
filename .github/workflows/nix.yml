@@ -28,7 +28,7 @@ jobs:
           path: result/bin/vigenere
   release:
     name: Create and Publish Release
-    if: startsWith(github.ref, 'refs/tags/')
+    if: ${{ startswith(github.ref, 'refs/tags/') }}
     needs: build
     runs-on: ubuntu-22.04
     steps:
