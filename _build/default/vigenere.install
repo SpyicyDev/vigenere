@@ -1,0 +1,11 @@
+lib: [
+  "_build/install/default/lib/vigenere/META"
+  "_build/install/default/lib/vigenere/dune-package"
+  "_build/install/default/lib/vigenere/opam"
+]
+bin: [
+  "_build/install/default/bin/vigenere"
+]
+doc: [
+  "_build/install/default/doc/vigenere/README.md"
+]
