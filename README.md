@@ -4,6 +4,8 @@ The command can be run with ```vigenere```, and contains all documentation! Need
 
 Please note that the implementation of the cipher cracking is not completed yet - I will submit a new version of this project once it is completed! This has working implementations of decryption and encryption, able to both input and output files with plaintext and ciphertext.
 
+Also, please make sure to run the built executable **IN THE ROOT DIRECTORY!** There are files in resources/ that it needs access to via a relative path!
+
 ## Building it yourself
 
 There are two paths you can take to build this project: Installing OCaml and the OCaml platform tools, or using Nix.
