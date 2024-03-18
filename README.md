@@ -6,11 +6,11 @@ Please note that the implementation of the cipher cracking is not completed yet 
 
 Also, please make sure to run the built executable **IN THE ROOT DIRECTORY!** There are files in resources/ that it needs access to via a relative path!
 
-## Building it yourself
+# Building it yourself
 
 There are two paths you can take to build this project: Installing OCaml and the OCaml platform tools, or using Nix.
 
-### OCaml Installation
+## OCaml Installation
 
 To install OCaml, head over to [OCaml.org](https://ocaml.org/docs/installing-ocaml#ocaml-platform-tools-on-unix) and follow the guide there to install the main tools. It'll be the unix installation instructions, and then scroll down to the platform tools.
 
@@ -28,7 +28,7 @@ Install it with:
 
 Which will put it in your $PATH, presuming you setup opam in your ~/.zprofile properly, as in the installation instructions. After that, just run ```vigenere --help``` to see how to use the command! The subcommands also have their own help dialogues, if you add the --help flag to a subcommand.
 
-### Nix Installation
+## Nix Installation
 
 Nix is a declarative, purely functional package manager and build tool that allows you to list in one file a project's dependencies, how it is built, and some other stuff about it. It's even used with NixOS, a Linux distribution, or with tools like nix-darwin to declaratively configure an entire system!
 
