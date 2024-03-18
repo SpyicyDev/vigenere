@@ -10,6 +10,8 @@ Also, please make sure to run the built executable **IN THE ROOT DIRECTORY!** Th
 
 There are two paths you can take to build this project: Installing OCaml and the OCaml platform tools, or using Nix.
 
+With the OCaml route, you will actually install OCaml on your system like you have Python installed directly on your system. Installing Nix will enable you to build/develop this project in an isolated environment, installing relevant packages only where they need to be and not in your whole system. Nix is really cool - more about it below!
+
 ## OCaml Installation
 
 To install OCaml, head over to [OCaml.org](https://ocaml.org/docs/installing-ocaml#ocaml-platform-tools-on-unix) and follow the guide there to install the main tools. It'll be the unix installation instructions, and then scroll down to the platform tools.
