@@ -27,10 +27,12 @@ jobs:
 
       - name: Build Binary
         run: nix build
+      - name: Create zip
+        run: zip vigenere-${{ matrix.arch }}.zip result/bin/vigenere
       - uses: actions/upload-artifact@v4
         with:
           name: vigenere-${{ matrix.arch }}
-          path: result/bin/vigenere
+          path: vigenere-${{ matrix.arch }}
 
   release:
     name: Create and Publish Release
