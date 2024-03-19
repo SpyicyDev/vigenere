@@ -2,7 +2,8 @@
 name: Build Project
 on:
   push:
-    branches: [main]
+    tags: v**
+
 jobs:
   build:
     name: Build Vigenere executable
