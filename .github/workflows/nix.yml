@@ -39,5 +39,5 @@ jobs:
       - uses: actions/download-artifact@v4
       - uses: AButler/upload-release-assets@v3.0
         with:
-          files: vigenere-*/vigenere
+          files: "vigenere-*/vigenere"
           repo-token: ${{ secrets.GITHUB_TOKEN }}
