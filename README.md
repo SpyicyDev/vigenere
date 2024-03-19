@@ -1,6 +1,6 @@
 # Vigenere Cipher Command
 
-The command can be run with ```vigenere```, and contains all documentation! Binaries are available in the GitHub release, or you can build it yourself with the instructions below!
+The command can be run with ```vigenere```, and contains all documentation! Binaries are available in the GitHub release, or you can build it yourself with the instructions below! If you download a binary, make sure to also download the two TXT files also, and put them in a resources/ folder under the directory where you run the executable.
 
 Please note that the implementation of the cipher cracking is not completed yet - I will submit a new version of this project once it is completed! This has working implementations of decryption and encryption, able to both input and output files with plaintext and ciphertext.
 
