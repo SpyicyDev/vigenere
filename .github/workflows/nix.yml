@@ -1,8 +1,8 @@
 ---
 name: Build Project
 on:
-  release: 
-    types: [created]
+  push:
+    tags: v**
 
 jobs:
   build:
@@ -31,13 +31,15 @@ jobs:
         with:
           name: vigenere-${{ matrix.arch }}
           path: result/bin/vigenere
+
   release:
     name: Create and Publish Release
     needs: build
     runs-on: ubuntu-22.04
+    permissions:
+      contents: write
     steps:
       - uses: actions/download-artifact@v4
-      - uses: AButler/upload-release-assets@v3.0
+      - uses: ncipollo/release-action@v1
         with:
-          files: "vigenere-*/vigenere"
-          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          artifacts: vigenere-*/vigenere
