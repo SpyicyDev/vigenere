@@ -1,4 +1,0 @@
-(executable
- (public_name vigenere)
- (name main)
- (libraries vigenere cmdliner))
