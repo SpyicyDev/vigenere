@@ -6,6 +6,8 @@ Please note that the implementation of the cipher cracking is not completed yet 
 
 Also, please make sure to run the built executable **IN THE ROOT DIRECTORY!** There are files in resources/ that it needs access to via a relative path!
 
+**Note:** all the stuff about the files in resources/ above can be ignored for now, they are not necessary for the current implementation!
+
 # Building it yourself
 
 There are two paths you can take to build this project: Installing OCaml and the OCaml platform tools, or using Nix.
