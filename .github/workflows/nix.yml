@@ -1,7 +1,8 @@
 ---
 name: Build Project
 on:
-  release: [created]
+  release: 
+    types: [created]
 
 jobs:
   build:
