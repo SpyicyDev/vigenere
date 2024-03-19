@@ -32,7 +32,7 @@ jobs:
       - uses: actions/upload-artifact@v4
         with:
           name: vigenere-${{ matrix.arch }}
-          path: vigenere-${{ matrix.arch }}
+          path: vigenere-${{ matrix.arch }}.zip
 
   release:
     name: Create and Publish Release
