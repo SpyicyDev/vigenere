@@ -52,6 +52,6 @@ or enter into a development shell with:
 
 ```nix develop```
 
-If you run ```nix develop```, you can run the same commands as above, minus the dependency initialization, as Nix does that for you - just ```dune build``` and ```dune install```!
+If you run ```nix develop```, you can run the same commands as above, minus the dependency initialization, as Nix does that for you - just ```dune build```! Unfortunately, because of how Nix sets up on-the-fly shells to develop in, you CANNOT install if you build this way! This is because opam, the OCaml package manager, is not actually installed on your system! So if you do this instead, you will need to run the program by calling it with it's relative path, which is somewhere inside the ```_build``` directory.
 
 Keep in mind, all of these Nix commands will take **a long time** the first time you run them! They are building from source all of the OCaml platform tools, and then building either the project or development environment!
