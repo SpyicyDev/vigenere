@@ -119,3 +119,14 @@ let read_file file = In_channel.with_open_bin file In_channel.input_all
 let write_file content name =
   Out_channel.with_open_text name (fun oc ->
       Out_channel.output_string oc content)
+
+let remove_punctuation_and_spaces text =
+  let text_list = String.to_seq text |> List.of_seq in
+  let rec aux orig acc =
+    match orig with
+    | [] -> acc
+    | h :: t when List.mem h skip_chars -> aux t acc
+    | h :: t -> aux t (h :: acc)
+  in
+  aux text_list [] |> List.rev |> List.to_seq |> String.of_seq
+
