@@ -1,4 +1,6 @@
-module Infix = struct
+module Infix : sig
+  val ( % ) : int -> int -> int
+end = struct
   let ( % ) x y =
     let result = x mod y in
     if result >= 0 then result else result + y
@@ -129,4 +131,3 @@ let remove_punctuation_and_spaces text =
     | h :: t -> aux t (h :: acc)
   in
   aux text_list [] |> List.rev |> List.to_seq |> String.of_seq
-
